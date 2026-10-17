@@ -1,0 +1,11 @@
+﻿<h2>ציונים</h2>
+<ul>
+  <li
+    *ngFor="let grade of array; trackBy: trackGrade"
+    [style.color]="grade.score < 60 ? 'red' : 'black'"
+  >
+    {{ grade.subject }}: {{ grade.score }}
+    {{ grade.score < 60 ? 'נכשל' : 'עבר' }}
+  </li>
+</ul>
+<p>ממוצע הציונים: {{ getAverage() }}</p>
