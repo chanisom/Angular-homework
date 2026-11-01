@@ -49,4 +49,4 @@ englishChars = [
 end(){
   this.email = this.email + '@gmail.com';
 }
-}
+} 

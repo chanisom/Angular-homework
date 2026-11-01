@@ -1,0 +1,5 @@
+<h1>שם המוצר: {{ product.name }}</h1>
+<h3>תיאור: {{product.description}}</h3>
+<p style="font-weight: bold;">מחיר: {{product.price}}</p>
+<p>מחיר לאחר הנחה: {{product.price - (discount())}}</p>
+<p *ngIf="discount()>=300" style="color: rgb(219, 98, 175); font-weight: bold;">הנחה משתלמת!</p>
