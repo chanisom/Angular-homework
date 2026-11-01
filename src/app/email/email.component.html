@@ -1,0 +1,10 @@
+<input type="text" placeholder="הכנס את כתובת המייל שלך" 
+(mouseenter)="onHover()" 
+(mouseleave)="onLeave()"
+[(ngModel)]="email"
+(ngModelChange)="changeToEnglish($event)"
+(keydown) = "EnterClick($event)"
+>
+<button (click)="end()">&#64;gmail.com</button>
+<p *ngIf="isHovering" style="color: red;">חובה למלא כתובת מייל</p>
+<h3 *ngIf="isEnter">"כתובת המייל שנקלטה היא: {{ email }}"</h3>
